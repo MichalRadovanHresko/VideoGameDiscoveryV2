@@ -6,7 +6,7 @@ import GameCardContainer from "./GameCardContainer";
 import { GameQuery } from "../App";
 
 interface Props {
-  gameQuery: GameQuery | null;
+  gameQuery: GameQuery;
 }
 const GameGrid = ({ gameQuery }: Props) => {
   const { data, error, isLoading } = useGames(gameQuery);
